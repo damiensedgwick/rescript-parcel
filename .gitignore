@@ -1,4 +1,10 @@
+build
+
 .cache
-dist
-lib
-node_modules
+.DS_Store
+.bsb.lock
+.merlin
+
+/dist
+/lib/
+/node_modules/
