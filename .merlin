@@ -1,4 +1,6 @@
 ####{BSB GENERATED: NO EDIT
+B lib/bs
+FLG -open RescriptParcel
 FLG -ppx '/Users/damienk.sedgwick/Development/rescript-parcel/node_modules/rescript/darwin/bsc.exe -as-ppx -bs-jsx 3'
 S /Users/damienk.sedgwick/Development/rescript-parcel/node_modules/rescript/lib/ocaml
 B /Users/damienk.sedgwick/Development/rescript-parcel/node_modules/rescript/lib/ocaml
