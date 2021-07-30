@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html",
-    "re:clean": "rescript clean",
+    "dev": "concurrently \"yarn re:dev\" \"yarn pa:dev\"",
+    "build": "concurrently \"yarn re:build\" \"yarn pa:build\"",
+    "pa:dev": "parcel index.html",
+    "pa:build": "parcel build index.html",
+    "re:dev": "rescript build -with-deps -w",
     "re:build": "rescript build -with-deps",
-    "re:start": "rescript build -with-deps -w"
+    "re:clean": "rescript clean"
   },
   "license": "ISC",
   "dependencies": {
     "@rescript/react": "^0.10.3",
+    "concurrently": "^6.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
