@@ -12,9 +12,9 @@ Clone this repository `https://github.com/damiensedgwick/rescript-parcel.git`
 
 Change directory `cd rescript-parcel`
 
-Install dependancies `yarn` or if you use npm `npm i`
+Install dependancies `yarn` or for npm use `npm i`
 
-Run local server `yarn dev`
+Run local server `yarn dev` or for npm use `npm run dev`
 
 If all goes well you should see something similar to the following output
 
