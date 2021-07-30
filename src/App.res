@@ -1,8 +1,11 @@
 module App = {
   @react.component
   let make = () => {
-    <div> {React.string("Hello World...")} </div>
+    <div> {React.string("Hello, World!")} </div>
   }
 }
 
-// ReactDOMRe.renderToElementWithId(<React.StrictMode> <App /> </React.StrictMode>, "root")
+switch ReactDOM.querySelector("#root") {
+| Some(root) => ReactDOM.render(<React.StrictMode> <App /> </React.StrictMode>, root)
+| None => ()
+}
