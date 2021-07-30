@@ -1,6 +1,8 @@
 {
   "name": "rescript-parcel",
   "version": "1.0.0",
+  "author": "Damien Sedgwick",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"yarn re:dev\" \"yarn pa:dev\"",
@@ -11,7 +13,6 @@
     "re:build": "rescript build -with-deps",
     "re:clean": "rescript clean"
   },
-  "license": "ISC",
   "dependencies": {
     "@rescript/react": "^0.10.3",
     "concurrently": "^6.2.0",
